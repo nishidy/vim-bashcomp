@@ -38,3 +38,5 @@ ${This} is a ${hoge}.
 Don't do " before { or } if you want to put variable between " and ".
 Do { or } and then do ", please.
 
+If you push { or } on space or break, it works as usual (go next or previous empty line).
+
