@@ -35,3 +35,6 @@ You can also do it for the first word.
 ${This} is a ${hoge}.
 ```
 
+Don't do " before { or } if you want to put variable between " and ".
+Do { or } and then do ", please.
+
