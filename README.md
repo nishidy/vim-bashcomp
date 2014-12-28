@@ -8,15 +8,13 @@ If you have the following bash script,
 if [ -n hoge ];
 ```
 
-you can just push { or } anywhere over "hoge".
-Then, you'll get this.
+you can just push { or } anywhere over hoge and you'll get this.
 
 ```sh
 if [ -n ${hoge} ];
 ```
 
-Additionally, you can push " anywhere over "${hoge}".
-Then, you'll get this.
+Additionally, you can push " anywhere over ${hoge} and you'll get this.
 
 ```sh
 if [ -n "${hoge}" ];
