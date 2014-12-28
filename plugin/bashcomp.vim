@@ -9,7 +9,7 @@ augroup END
 
 autocmd myvimrc FileType sh noremap <silent> { :call Bash_comp('{')<CR>
 autocmd myvimrc FileType sh noremap <silent> } :call Bash_comp('}')<CR>
-autocmd myvimrc FileType * noremap <silent> " :call Bash_comp('"')<CR>
+autocmd myvimrc FileType sh noremap <silent> " :call Bash_comp('"')<CR>
 
 function! Bash_comp(c)
 
