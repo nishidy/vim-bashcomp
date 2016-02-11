@@ -53,23 +53,18 @@ function! Bash_comp(c)
 
 	" When there is no space after current word
 	if c==col('.')
-
+		normal! $
+		if getline('.')[col('.')-1] =~ "\\W"
+			call cursor(line('.'),col('.')-1)
+		endif
 		if a:c=='"'
-			normal! $a"
+			normal! a"
 		else
-			normal! f.
-			if c==col('.')
-				normal! $a}
-			else
-				normal! i}
-			endif
+			normal! a}
 		endif
 
 	" When there is a space after current word
 	else
-		if getline('.')[col('.')-1] ~= \W
-			call cursor(line('.'),col('.')-1)
-		endif
 		if a:c=='"'
 			normal! i"
 		else
